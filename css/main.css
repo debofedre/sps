@@ -1,34 +1,69 @@
+.tabla {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+  text-align: center; }
+  .tabla table {
+    width: 50%;
+    color: #ffffff; }
+    .tabla table th {
+      background-color: #3B5249;
+      color: #ffffff; }
+
+.textoTablas {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  width: 40%; }
+  .textoTablas p {
+    margin-top: 0; }
+
 body {
-  font-family: 'Noto Sans', sans-serif; }
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #181818;
+  color: #ffffff; }
+
+.navbar-dark {
+  background-color: #181818; }
 
 .btn img {
-  width: 30px;
-  height: 30px; }
+  width: 40px;
+  height: 40px; }
 
+/*Banner*/
 .banner {
   width: 100%;
   height: 200px;
-  background-color: #bacbcf;
+  background-color: #212529;
   text-align: center; }
   .banner .titulo {
-    padding-top: 40px; }
+    padding-top: 40px;
+    color: #ffffff; }
   .banner .subtitulo {
     display: inline-block;
-    background-color: white;
+    background-color: #519872;
     border-radius: 30px;
     padding: 10px; }
   .banner .iconoBanner img {
     height: 70px;
     width: 70px;
-    margin-top: 5px;
+    margin-top: 4px;
     margin-left: 50%; }
 
+/*Texto principal*/
 .textoIntro {
   text-align: justify;
-  margin-left: 33%;
-  margin-top: 35px;
-  width: 35%; }
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  margin-top: 50px;
+  width: 40%; }
+  .textoIntro p {
+    margin-top: 0; }
 
+/*Lista contenido*/
 .itemsFlex {
   display: flex;
   flex-direction: row;
@@ -44,6 +79,20 @@ body {
   margin-top: 50px;
   margin-bottom: 50px; }
   .iconoTitulo img {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px; }
+    height: 55px;
+    width: 55px;
+    margin-right: 20px; }
+
+h2 {
+  margin-top: 20px; }
+
+h4 {
+  margin-top: 20px; }
+
+.linksIndex a {
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff; }
+  .linksIndex a:hover {
+    color: #3B5249;
+    text-decoration-color: #519872; }

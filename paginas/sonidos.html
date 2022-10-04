@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="sp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPS</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="multimedia/iconos/clapperboard.png"
+      type="image/x-icon"
+    />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <!--Navbar bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>SPS</strong></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Glosarios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Subtitle Edit
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Guías
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fuentes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <!--<li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>-->
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn" type="submit">
+              <img alt="Icono artículos" src="../multimedia/iconos/buscar.png"/>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="textoTablas">
+      <div class="iconoTitulo">
+        <img alt="Icono artículos" src="../multimedia/iconos/helicopter.png" />
+        <h2>Sonidos</h2>
+      </div>
+      <p>Se recomienda no usar palabras como "rudio" o "sonido"; es preferible escribir un verbo que indique la acción que genera el sonido. Es mejor [motor arranca] que [ruido de motor].</p>
+    </main>
+
+    <section class="tamanoTabla">
+      <div class="tabla">
+        <table class="table table-bordered table-dark table-hover">
+          <th colspan="3">Teléfono</th>
+          <tr>
+            <td><strong>Llamada entrante</strong></td>
+            <td>[suena llamada entrante] [suena teléfono] [vibra celular]</td>
+            <td>[telephone rings] [cell phone vibrating]</td>
+          </tr>
+          <tr>
+            <td><strong>Llamada saliente</strong></td>
+            <td>[suena tono de llamada]</td>
+            <td>[ringing tone]</td>
+          </tr>
+          <tr>
+            <td><strong>Tecleo</strong></td>
+            <td>[marca llamada]</td>
+            <td>[dials] [typing]</td>
+          </tr>
+          <tr>
+            <td><strong>Sonidos</strong></td>
+            <td>
+              [corta llamada] [bloquea celular] [desbloquea celular] [pitido]
+              [notificación de celular]
+            </td>
+            <td>
+              [hangs up] [locks cell phone] [cell phone unlocks] [cell phone
+              chimes] [phone disconnects] [phone beeps]
+            </td>
+          </tr>
+        </table>
+
+        <table class="table table-bordered table-dark table-hover">
+          <th colspan="3">Vehículos</th>
+          <tr>
+            <td>[suena alarma]</td>
+            <td>[car alarms beeps]</td>
+          </tr>
+          <tr>
+            <td>[puerta se abre] [puerta se cierra]</td>
+            <td>[car door closes] [car door opens]</td>
+          </tr>
+          <tr>
+            <td>[motor arranca] [enciende el motor del auto]</td>
+            <td>[engine accelerates/starts] [engine aproaches]</td>
+          </tr>
+          <tr>
+            <td>[suena bocina]</td>
+            <td>[horn honks]</td>
+          </tr>
+          <tr>
+            <td>[frenazo] [chirrido de llantas]</td>
+            <td>[tires squealing]</td>
+          </tr>
+          <tr>
+            <td>[llanta revienta]</td>
+            <td>[tire pops]</td>
+          </tr>
+          <tr>
+            <td>[rotor de helicóptero]</td>
+            <td>[helicopter engine whirring]</td>
+          </tr>
+          <tr>
+            <td>[motor de avión encendido]</td>
+            <td>[plane engine roaring]</td>
+          </tr>
+          <tr>
+            <td>[sirenas de ambulancia]</td>
+            <td>[ambulance siren wailing]</td>
+          </tr>
+        </table>
+
+        <table class="table table-bordered table-dark table-hover">
+          <th colspan="3">Objetos</th>
+          <tr>
+            <td>[-]</td>
+            <td>[camera shutter clicks]</td>
+          </tr>
+          <tr>
+            <td>[-]</td>
+            <td>[cap grating]</td>
+          </tr>
+          <tr>
+            <td>[pitido de monitor cardíaco]</td>
+            <td>[heart monitor beeping]</td>
+          </tr>
+          <tr>
+            <td>[-]</td>
+            <td>[computer keys clicking]</td>
+          </tr>
+          <tr>
+            <td>[ruidos electrónicos] [chisporroteando]</td>
+            <td>[electric crackling] [crackling] [electronic gibbering]</td>
+          </tr>
+          <tr>
+            <td>[sonido metálico]</td>
+            <td>[metallic creaking] [clang]</td>
+          </tr>
+          <tr>
+            <td>[traqueteo de sillas de ruedas]</td>
+            <td>[-]</td>
+          </tr>
+          <tr>
+            <td>[pitido] [pita]</td>
+            <td>[beeping] [beeps]</td>
+          </tr>
+          <tr>
+            <td>[zumbido]</td>
+            <td>[buzzing]</td>
+          </tr>
+          <tr>
+            <td>[arma chasquea]</td>
+            <td>[guns snaps] [gun cocks]</td>
+          </tr>
+          <tr>
+            <td>[disparos]</td>
+            <td>[gunshots]</td>
+          </tr>
+          <tr>
+            <td>[golpe fuerte]</td>
+            <td>[thump]</td>
+          </tr>
+          <tr>
+            <td>[puerta chirría]</td>
+            <td>[door squeaks]</td>
+          </tr>
+        </table>
+
+        <table class="table table-bordered table-dark table-hover">
+          <th colspan="3">Acciones</th>
+          <tr>
+            <td>[llaman a la puerta]</td>
+            <td>[knocking]</td>
+          </tr>
+          <tr>
+            <td>[puerta se abre] [puerta se cierra]</td>
+            <td>[door opens] [door closes]</td>
+          </tr>
+          <tr>
+            <td>[temblando]</td>
+            <td>[shaking] [shuddering]</td>
+          </tr>
+          <tr>
+            <td>[tiritando]</td>
+            <td>[shivering]</td>
+          </tr>
+          <tr>
+            <td>[balbucea] [duda] [vacila]</td>
+            <td>[mumbling]</td>
+          </tr>
+          <tr>
+            <td>[carraspea]</td>
+            <td>[clears throat]</td>
+          </tr>
+          <tr>
+            <td>[eructo]</td>
+            <td>[burp]</td>
+          </tr>
+          <tr>
+            <td>[masticando]</td>
+            <td>[chewing] [chomping]</td>
+          </tr>
+          <tr>
+            <td>[tose]</td>
+            <td>[coughing]</td>
+          </tr>
+          <tr>
+            <td>[pasos] [taconeo] [pasos se alejan] [pasos alejándose] [pasos acercándose] </td>
+            <td>[footsteps] [footsteps fading]</td>
+          </tr>
+          <tr>
+            <td>[pisotea]</td>
+            <td>[stomps feet]</td>
+          </tr>
+          <tr>
+            <td>[estornuda]</td>
+            <td>[sneezes]</td>
+          </tr>
+          <tr>
+            <td>[estornuda]</td>
+            <td>[sneezes]</td>
+          </tr>
+          <tr>
+            <td>[aspira]</td>
+            <td>[sniffs]</td>
+          </tr>
+          <tr>
+            <td>[roncando]</td>
+            <td>[snoring]</td>
+          </tr>
+          <tr>
+            <td>[tartamudeando]</td>
+            <td>[stammer]</td>
+          </tr>
+          <tr>
+            <td>[silbido]</td>
+            <td>[whistling]</td>
+          </tr>
+          <tr>
+            <td>[aullar]</td>
+            <td>[yelp]</td>
+          </tr>
+        </table>
+
+        <table class="table table-bordered table-dark table-hover">
+            <th colspan="3">Sonidos de ambiente</th>
+            <tr>
+              <td>[alboroto]</td>
+              <td>[brawling]</td>
+            </tr>
+            <tr>
+              <td>[vítores] [clamor] [ovacion] [vivando]</td>
+              <td>[cheering]</td>
+            </tr>
+            <tr>
+              <td>[canto]</td>
+              <td>[chanting]</td>
+            </tr>
+            <tr>
+              <td>[parloteo]</td>
+              <td>[chatter]</td>
+            </tr>
+            <tr>
+              <td>[ecos]</td>
+              <td>[echoes] [echoing]</td>
+            </tr>
+            <tr>
+              <td>[aplausos]</td>
+              <td>[applause] [clapping]</td>
+            </tr>
+            <tr>
+                <td>[tarareo]</td>
+                <td>[humming]</td>
+              </tr>
+              <tr>
+                <td>[diálogo inaudible]</td>
+                <td>[inaudible dialogue] [indistinct chattering] [indisinct chatter]</td>
+              </tr>
+              <tr>
+                <td>[murmullo] [muttering indistinctly]</td>
+                <td>[murmur] [murmullo indistinto]</td>
+              </tr>
+              <tr>
+                <td>[hablando indistintamente]</td>
+                <td>[speaking gibberish]/td>
+              </tr>
+          </table>
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
