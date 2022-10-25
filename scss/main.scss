@@ -3,91 +3,102 @@
 
 body{
     font-family: 'Noto Sans', sans-serif;
-    background-color: $darkMode;
+    background-color: $colorPrincipal;
     color: $texto;
 }
 
-.navbar-dark{
-    background-color: $darkMode;
-
-}
-
-.btn{
-    img{
-        width: 40px;
-        height: 40px;
+.navbar{
+    background-color: $colorPrincipal;
+    border-bottom: 1px solid white;
+    div{
+        a{
+            color: #ffffff;
+        }
     }
 }
 
+.dropdown-menu{
+    color:#ffffff;
+    background-color: $colorPrincipal;
+}
+
+/*Shape divider*/
+.custom-shape-divider-bottom-1666711326 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666711326 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1666711326 .shape-fill {
+    fill: $colorPrincipal;
+}
 /*Banner*/
 .banner{
+    position:relative; /*para el shapedivider*/
     width: 100%;
-    height: 200px;
+    height: 550px;
     background-color: $colorSecundario;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .textoBanner{
         .titulo{
-            padding-top: 40px;
-            color: $texto;
+            width: 600px;
+            margin-bottom: 40px;
+            color: $colorPrincipal;
+        }
+        .parrafo{
+            color: $colorPrincipal;
+            width: 600px;
         }
         .subtitulo{
             display: inline-block;
-            background-color: $colorPrincipal;
+            background-color: $colorTerciario;
             border-radius: 30px;
             padding:10px;
+            margin-bottom: 50px;
         }
-        .iconoBanner{
-            img{
-                height: 70px;
-                width: 70px;
-                margin-top: 4px;
-                margin-left: 50%;
-            }
     }
+    .iconoBanner{
+        img{
+            height: 350px;
+            width: 350px;
+            margin-bottom: 80px;
+            
+        }
 }
-
-/*Texto principal*/
-.textoIntro{
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    margin-top: 50px;
-    width: 40%;
-    p{
-        margin-top: 0;
-    }
 }
-
-
 
 /*Lista contenido*/
 .itemsFlex{
+    margin: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: 50px;
+    h4{
+        text-decoration: $colorTerciario solid underline;
+    }
 }
 
-.iconoTitulo{
+.listaIndex{
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-top: 50px;
-    margin-bottom: 50px;
-        img{
-            height: 55px;
-            width: 55px;
-            margin-right: 20px;
-        }
-}
-
-h2{
-    margin-top: 20px;
-}
-h4{
-    margin-top: 20px;
+    flex-direction: column;
 }
 
 .linksIndex{
@@ -97,7 +108,9 @@ h4{
     color: $texto;
     &:hover{
         color: $colorTerciario;
-        text-decoration-color: $colorPrincipal;
+        text-decoration-color: $colorTerciario;
     }
 }
 }
+
+/*Footer*/
