@@ -2,27 +2,33 @@
 @import "tablas";
 
 body{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: $colorPrincipal;
-    color: $texto;
 }
 
 .navbar{
-    background-color: $colorPrincipal;
-    border-bottom: 1px solid white;
+    background-color: $colorSecundario;
+    border-bottom: 1px solid $colorTerciario;
     div{
         a{
-            color: #ffffff;
+            color: $textoClaro;
+            img{
+                width: 65px;
+                height: 65px;
+            }
+            &:hover{
+            color:$colorTerciario;
+            background-color: $colorPrincipalTrans;
+            }
         }
     }
 }
 
 .dropdown-menu{
-    color:#ffffff;
-    background-color: $colorPrincipal;
+    background-color: $colorPrincipal
 }
 
-/*Shape divider*/
+/*Shape divider
 .custom-shape-divider-bottom-1666711326 {
     position: absolute;
     bottom: 0;
@@ -43,6 +49,28 @@ body{
 
 .custom-shape-divider-bottom-1666711326 .shape-fill {
     fill: $colorPrincipal;
+}*/
+
+.custom-shape-divider-bottom-1666890719 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666890719 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 149px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1666890719 .shape-fill {
+    fill: $colorPrincipal;
 }
 /*Banner*/
 .banner{
@@ -56,15 +84,17 @@ body{
     align-items: center;
     .textoBanner{
         .titulo{
-            width: 600px;
+            width: 500px;
             margin-bottom: 40px;
-            color: $colorPrincipal;
+            color: $textoOscuro;
+            font-family: 'Antonio', sans-serif;
         }
         .parrafo{
-            color: $colorPrincipal;
+            color: $textoOscuro;
             width: 600px;
         }
         .subtitulo{
+            color: $colorSecundario;
             display: inline-block;
             background-color: $colorTerciario;
             border-radius: 30px;
@@ -91,25 +121,23 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
-    h4{
-        text-decoration: $colorTerciario solid underline;
-    }
 }
 
 .listaIndex{
     display: flex;
     flex-direction: column;
+    h4{
+    color: $textoOscuro;
 }
-
 .linksIndex{
     a{
     text-align: left;
     text-decoration: none;
-    color: $texto;
+    color: $textoOscuro;
     &:hover{
         color: $colorTerciario;
-        text-decoration-color: $colorTerciario;
     }
+}
 }
 }
 

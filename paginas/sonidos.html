@@ -17,12 +17,13 @@
     />
 
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
 
     <!--Bootstrap icons-->
     <link
@@ -46,7 +47,7 @@
     <!--Navbar bootstrap-->
     <nav class="navbar navbar-expand-lg navbar navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>SPS</strong></a>
+        <a class="navbar-brand" href="../index.html"><img alt="icono SPS" src="../multimedia/iconos/spslogo.png" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -153,14 +154,73 @@
     </nav>
 
     <main class="textoTablas">
-        <h2>Sonidos</h2>
-      <p>Se recomienda no usar palabras como "rudio" o "sonido"; es preferible escribir un verbo que indique la acción que genera el sonido. Es mejor [motor arranca] que [ruido de motor].</p>
+        <h1>Sonidos</h1>
+        <p>Sonidos de ambiente | Teléfono | Vehículos | Objetos | Acciones</p>
     </main>
 
-    <section class="tamanoTabla">
-      <div class="tabla">
-        <table class="table table-bordered table-hover">
-          <th colspan="3">Teléfono</th>
+    <!--Speech bubble-->
+    <section class="speechBubble">
+      <div class="textoEntreTablas">
+        <p>Se recomienda no usar palabras como "rudio" o "sonido"; es preferible escribir un verbo que indique la acción que genera el sonido. Es mejor [motor arranca] que [ruido de motor].</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <table>
+        <thead>
+          <th colspan="3"><strong>Sonidos de ambiente</strong></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>[alboroto]</td>
+            <td>[brawling]</td>
+          </tr>
+          <tr>
+            <td>[vítores] [clamor] [ovacion] [vivando]</td>
+            <td>[cheering]</td>
+          </tr>
+          <tr>
+            <td>[canto]</td>
+            <td>[chanting]</td>
+          </tr>
+          <tr>
+            <td>[parloteo]</td>
+            <td>[chatter]</td>
+          </tr>
+          <tr>
+            <td>[ecos]</td>
+            <td>[echoes] [echoing]</td>
+          </tr>
+          <tr>
+            <td>[aplausos]</td>
+            <td>[applause] [clapping]</td>
+          </tr>
+          <tr>
+              <td>[tarareo]</td>
+              <td>[humming]</td>
+            </tr>
+            <tr>
+              <td>[diálogo inaudible]</td>
+              <td>[inaudible dialogue] [indistinct chattering] [indisinct chatter]</td>
+            </tr>
+            <tr>
+              <td>[murmullo] [muttering indistinctly]</td>
+              <td>[murmur] [murmullo indistinto]</td>
+            </tr>
+            <tr>
+              <td>[hablando indistintamente]</td>
+              <td>[speaking gibberish]/td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container">
+      <table>
+        <thead>
+          <th colspan="3"><strong>Teléfono</strong></th>
+        </thead>
+        <tbody>
           <tr>
             <td><strong>Llamada entrante</strong></td>
             <td>[suena llamada entrante] [suena teléfono] [vibra celular]</td>
@@ -187,10 +247,16 @@
               chimes] [phone disconnects] [phone beeps]
             </td>
           </tr>
-        </table>
+        </tbody>
+      </table>
+    </div>
 
-        <table class="table table-bordered table-hover">
-          <th colspan="3">Vehículos</th>
+    <div class="container">
+      <table>
+        <thead>
+          <th colspan="3"><strong>Vehículos</strong></th>
+        </thead>
+        <tbody>
           <tr>
             <td>[suena alarma]</td>
             <td>[car alarms beeps]</td>
@@ -227,10 +293,16 @@
             <td>[sirenas de ambulancia]</td>
             <td>[ambulance siren wailing]</td>
           </tr>
-        </table>
+        </tbody>
+      </table>
+    </div>
 
-        <table class="table table-bordered table-hover">
-          <th colspan="3">Objetos</th>
+    <div class="container">
+      <table>
+        <thead>
+          <th colspan="3"><strong>Objetos</strong></th>
+        </thead>
+        <tbody>
           <tr>
             <td>[-]</td>
             <td>[camera shutter clicks]</td>
@@ -283,10 +355,17 @@
             <td>[puerta chirría]</td>
             <td>[door squeaks]</td>
           </tr>
-        </table>
+        </tbody>
+      </table>
+    </div>
+        
 
-        <table class="table table-bordered table-hover">
-          <th colspan="3">Acciones</th>
+    <div class="container">
+      <table>
+        <thead>
+          <th colspan="3"><strong>Acciones</strong></th>
+        </thead>
+        <tbody>
           <tr>
             <td>[llaman a la puerta]</td>
             <td>[knocking]</td>
@@ -359,53 +438,9 @@
             <td>[aullar]</td>
             <td>[yelp]</td>
           </tr>
-        </table>
-
-        <table class="table table-bordered table-hover">
-            <th colspan="3">Sonidos de ambiente</th>
-            <tr>
-              <td>[alboroto]</td>
-              <td>[brawling]</td>
-            </tr>
-            <tr>
-              <td>[vítores] [clamor] [ovacion] [vivando]</td>
-              <td>[cheering]</td>
-            </tr>
-            <tr>
-              <td>[canto]</td>
-              <td>[chanting]</td>
-            </tr>
-            <tr>
-              <td>[parloteo]</td>
-              <td>[chatter]</td>
-            </tr>
-            <tr>
-              <td>[ecos]</td>
-              <td>[echoes] [echoing]</td>
-            </tr>
-            <tr>
-              <td>[aplausos]</td>
-              <td>[applause] [clapping]</td>
-            </tr>
-            <tr>
-                <td>[tarareo]</td>
-                <td>[humming]</td>
-              </tr>
-              <tr>
-                <td>[diálogo inaudible]</td>
-                <td>[inaudible dialogue] [indistinct chattering] [indisinct chatter]</td>
-              </tr>
-              <tr>
-                <td>[murmullo] [muttering indistinctly]</td>
-                <td>[murmur] [murmullo indistinto]</td>
-              </tr>
-              <tr>
-                <td>[hablando indistintamente]</td>
-                <td>[speaking gibberish]/td>
-              </tr>
-          </table>
-      </div>
-    </section>
+        </tbody>
+      </table>
+    </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script

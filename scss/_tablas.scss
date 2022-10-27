@@ -1,6 +1,160 @@
 .bodyTablas{
-    background-color: $colorSecundario;
+    background-color: $colorPrincipal;
 }
+
+/*Tabla*/
+.container {
+	position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+table {
+	width: 700px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(138, 138, 138, 0.507);
+    border-radius: 10px;
+}
+
+th,
+td {
+	padding: 20px;
+	background-color:$colorPrincipalTrans;
+	color: $textoClaro;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #000000;
+        text-align: center;
+        color: $textoClaro;
+        &:hover {
+        color: $colorTerciario;
+        }
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: $colorPrincipalTrans;
+		}
+	}
+	td {
+		position: relative;
+        text-align: center;
+		&:hover {
+            color: $colorTerciario;
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: $colorPrincipalTrans;
+				z-index: -1;
+			}
+		}
+	}
+}
+
+
+/*Texto*/
+
+.textoTablas{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    h1{
+        color: $textoOscuro;
+        font-family: 'Antonio', sans-serif;
+    }
+    p{
+        margin-top: 0;
+        color: $textoOscuro;
+    }
+}
+
+/*Texto entre tablas MEDIA QUERISSSSS
+
+.speechBubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .textoEntreTablas {
+	    // layout
+        margin: 30px 10px;
+	    position: relative;
+	    max-width: 30em;
+	    // looks
+	    background-color: $colorTerciario;
+	    padding: 1.125em 1.5em;
+	    border-radius: 1rem;
+        box-shadow:	0 0.125rem 0.5rem rgba(255, 255, 255, 0.3), 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.2);
+        &::before {
+        // layout
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 100%;
+        left: 1.5em; // offset should move with padding of parent
+        border: .75rem solid transparent;
+        border-top: none;
+    
+        // looks
+        border-bottom-color: $colorTerciario;
+        filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+    }
+}
+}*/
+
+/*Texto entre tablas*/
+
+.speechBubble{
+    display: flex;
+    justify-content: right;
+    
+    .textoEntreTablas {
+	    // layout
+        margin: 30px 20px;
+	    position: absolute;
+	    max-width: 250px;
+	    // looks
+	    background-color: $colorTerciario;
+	    padding: 1.125em 1.5em;
+	    border-radius: 1rem;
+        box-shadow:	0 0.125rem 0.5rem rgba(255, 255, 255, 0.3), 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.2);
+        &::before {
+        // layout
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid $colorTerciario;;
+        border-top: 10px solid $colorTerciario;;
+        border-bottom: 10px solid transparent;
+        left: -19px;
+        top: 10px;
+    
+        // looks
+        filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+    }
+}
+}
+
+/*
 .tabla{
     display: flex;
     flex-direction: column;
@@ -10,32 +164,17 @@
     table{
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.37);
         width: 50%;
-        color: $textoTabla;
+        color: $textoClaro;
         border: $colorPrincipal;
         background-color: $colorSecundario;
         margin: 20px;
         th{
-            color: $textoTabla;
+            color: $textoClaro;
             padding: 1em;
+            background-color: $colorTerciario;
         }
     }
-}
+}*/
 
-.textoTablas{
-    margin: 50px;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    width: 40%;
-    h2{
-        text-decoration: $colorTerciario solid underline;
-        color: $textoTabla;
-    }
-    p{
-        margin-top: 0;
-        color: $textoTabla;
-    }
-}
 
 
