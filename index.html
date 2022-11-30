@@ -17,13 +17,19 @@
     />
 
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Bootstrap icons-->
     <link
@@ -44,178 +50,37 @@
   </head>
 
   <body>
-    <!--Navbar bootstrap-->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img alt="icono SPS" src="multimedia/iconos/spslogo.png" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Glosarios
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Subtitle Edit
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Guías
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Fuentes
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </div>
-      </div>
-    </nav>
-    	
     <!--Banner-->
     <div class="banner">
-      <!--Shape dividier
-      <div class="custom-shape-divider-bottom-1666711326">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>-->
-    <div class="custom-shape-divider-bottom-1666890719">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-      </svg>
-  </div>
-    <div class="textoBanner">
-      <h1 class="titulo"><strong>Subtitulado para personas<br>con discapacidad auditiva</strong></h1>
-      <p class="parrafo">¡Hola! Soy <strong>traductora audivosiual</strong>. Desarrollé esta página para todo aquel que esté interesado, como yo, en aprender más sobre esta rama de la traducción audiovisual.</p>
-      <p class="subtitulo">Tutoriales | Glosarios | Artículos y más</p>
-    </div>
-      <div class="iconoBanner">
-        <img alt="icono film" src="multimedia/iconos/filmrolls.gif" />
+      <div class="textoBanner">
+
+        <h1 class="titulo">
+          <strong
+            >Subtitulado para personas<br />con discapacidad auditiva</strong
+          >
+        </h1>
+
+        <p class="parrafo">
+          ¡Hola! :) Soy <strong>traductora audivosiual</strong>.
+        </p>
+
+        <p class="parrafo">
+          Desarrollé esta página para todo aquel que esté interesado, como yo,<br>
+          en <strong>aprender</strong> más sobre esta rama de la traducción
+          audiovisual.
+        </p>
+
+        <p class="subtitulo">
+          <a class="linksIndex" href="paginas/glosarios.html">Glosarios</a>
+          <a class="linksIndex" href="paginas/consejos.html">Consejos</a>
+          <a class="linksIndex" href="paginas/software.html">Software</a>
+          <a class="linksIndex" href="paginas/recursos.html">Recursos Web</a>
+        </p>
+
       </div>
     </div>
 
-    <section class="itemsFlex">
-        <div class="listaIndex">
-            <h4>Glosarios</h4>
-          <ul class="linksIndex">
-            <a href="paginas/musica.html"><li>Música</li></a>
-            <a href="paginas/sonidos.html"><li>Sonidos de ambiente y de objetos</li></a>
-            <a href="paginas/expresiones.html"><li>Expresiones y entonación</li></a>
-            <a href="paginas/onomatopeya.html"><li>Onomatopeyas</li></a>
-          </ul>
-        </div>
-
-        <div class="listaIndex">
-          <h4>Guías</h4>
-          <ul class="linksIndex">
-            <a href="#"><li>Segmentación</li></a>
-            <a href="#"><li>Gramática</li></a>
-            <a href="#"><li>Formato</li></a>
-            <a href="#"><li>Formato</li></a>
-          </ul>
-        </div>
-
-        <div class="listaIndex">
-            <h4>Subtitle Edit</h4>
-          <ul class="linksIndex">
-            <a class="#" href="#"><li>Link de descarga</li></a>
-            <a href="#"><li>Tutorial</li></a>
-            <a href="#"><li><em>Shot changes</em></li></a>
-            <a href="#"><li>Cómo incrustar subtítulos</li></a>
-          </ul>
-        </div>
-
-        <div class="listaIndex">
-            <h4>Fuentes de consulta</h4>
-          <ul class="linksIndex">
-            <a href="http://dle.rae.es/?id=DgIqVCc" target="_blank"><li>Real Academia Espñola</li></a>
-            <a href="https://apps2.rae.es/CORPES/view/inicioExterno.view;jsessionid=6A01C9614AD146F18C592D996FD726E7" target="_blank"><li>Corpus del Español del Siglo XXI</li></a>
-            <a href="https://www.fundeu.es/" target="_blank"><li>Fundeu - Buscador de dudas</li></a>
-            <a href="http://www.wordreference.com/" target="_blank"><li>Wordreference</li></a>
-          </ul>
-        </div>
-    </section>
-    <footer>
-      
-    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

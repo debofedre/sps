@@ -1,5 +1,95 @@
-.bodyTablas{
+/*Nav*/
+nav{
+    background-image: url("../multimedia/fondo.png");
+    display: flex;
+    justify-content: center;
     background-color: $colorPrincipal;
+    .subtitulo{
+        display: inline-block;
+        background-color: $colorTerciario;
+        border-radius: 30px;
+        padding:10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        color: $colorSecundario;
+        
+                box-shadow: inset 0 0 0 0 #eb542a;
+                transition: ease-out 0.5s;
+                outline: none;
+            &:hover{
+                box-shadow: inset 900px 0 0 0 #eb542a;
+                border-radius: 30px;
+            }
+        a{
+        color: $colorPrincipal;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 25px;
+        padding: 10px;
+        transition: ease-out 0.1s;
+        &:hover{
+            color: $textoOscuro;
+        }
+        
+        }
+}
+}
+
+/*banner*/
+.bannerTablas{
+    background-image: url("../multimedia/fondo.png");
+    width: 100%;
+    height: 450px;
+    background-color: $colorPrincipal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    .textoBannerTablas{
+        .titulo{
+            font-size: 70px;
+            margin-bottom: 50px;
+            color: $textoOscuro;
+            font-family: 'Antonio', sans-serif;
+            /*underline*/
+            text-decoration-line: underline;
+            text-decoration-style: "solid";
+            text-decoration-color: $colorSecundario;
+            text-decoration-thickness: 9px;
+        }
+    }
+}
+
+/*Lista contenido*/
+.itemsFlex{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.listaIndex{
+    display: flex;
+    flex-direction: column;
+    h4{
+    color: $textoOscuro;
+}
+.linksIndex{
+    list-style-type: circle;
+    a{
+    text-align: left;
+    text-decoration: none;
+    color: $textoOscuro;
+    transition: ease-out 0.1s;
+    &:hover{
+        color: $colorSecundario;
+    }
+}
+}
 }
 
 /*Tabla*/
@@ -14,15 +104,17 @@ table {
 	width: 700px;
 	border-collapse: collapse;
 	overflow: hidden;
-	box-shadow: 0 0 20px rgba(138, 138, 138, 0.507);
-    border-radius: 10px;
+	box-shadow: 0 0 20px #0000003f;
+    border-radius: 29px;
+    background: #ffffff;
+    
 }
 
 th,
 td {
 	padding: 20px;
-	background-color:$colorPrincipalTrans;
-	color: $textoClaro;
+	background-color:#ffffff38;
+	color: $textoOscuro;
 }
 
 th {
@@ -34,16 +126,16 @@ thead {
 		background-color: #000000;
         text-align: center;
         color: $textoClaro;
-        &:hover {
-        color: $colorTerciario;
-        }
 	}
 }
 
 tbody {
 	tr {
+        box-shadow: inset 0 0 0 0 $colorSecundario;
+        transition: ease-out 0.5s;
+        outline: none;
 		&:hover {
-			background-color: $colorPrincipalTrans;
+			box-shadow: inset 900px 0 0 0 #eb542a36;
 		}
 	}
 	td {
@@ -78,6 +170,7 @@ tbody {
     h1{
         color: $textoOscuro;
         font-family: 'Antonio', sans-serif;
+        
     }
     p{
         margin-top: 0;
@@ -131,10 +224,10 @@ tbody {
 	    position: absolute;
 	    max-width: 250px;
 	    // looks
-	    background-color: $colorTerciario;
+        color: $textoClaro;
+	    background-color: $colorSecundario;
 	    padding: 1.125em 1.5em;
 	    border-radius: 1rem;
-        box-shadow:	0 0.125rem 0.5rem rgba(255, 255, 255, 0.3), 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.2);
         &::before {
         // layout
         content: '';
@@ -142,15 +235,16 @@ tbody {
         width: 0;
         height: 0;
         border-left: 10px solid transparent;
-        border-right: 10px solid $colorTerciario;;
-        border-top: 10px solid $colorTerciario;;
+        border-right: 10px solid $colorSecundario;
+        border-top: 10px solid $colorSecundario;
         border-bottom: 10px solid transparent;
         left: -19px;
         top: 10px;
+        }
     
-        // looks
+        /* looks
         filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
-    }
+    }*/
 }
 }
 

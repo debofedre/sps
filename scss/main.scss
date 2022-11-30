@@ -1,144 +1,68 @@
 @import "variables";
-@import "tablas";
+@import "glosarios";
 
 body{
     font-family: 'Poppins', sans-serif;
     background-color: $colorPrincipal;
+    background-image: url("../multimedia/fondo.png");
 }
 
-.navbar{
-    background-color: $colorSecundario;
-    border-bottom: 1px solid $colorTerciario;
-    div{
-        a{
-            color: $textoClaro;
-            img{
-                width: 65px;
-                height: 65px;
-            }
-            &:hover{
-            color:$colorTerciario;
-            background-color: $colorPrincipalTrans;
-            }
-        }
-    }
+/*Scroll*/
+html{
+    scroll-behavior: smooth;
 }
 
-.dropdown-menu{
-    background-color: $colorPrincipal
-}
-
-/*Shape divider
-.custom-shape-divider-bottom-1666711326 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1666711326 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1666711326 .shape-fill {
-    fill: $colorPrincipal;
-}*/
-
-.custom-shape-divider-bottom-1666890719 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1666890719 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 149px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1666890719 .shape-fill {
-    fill: $colorPrincipal;
-}
 /*Banner*/
 .banner{
-    position:relative; /*para el shapedivider*/
     width: 100%;
-    height: 550px;
-    background-color: $colorSecundario;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-content: center;
+    text-align: center;
     .textoBanner{
         .titulo{
-            width: 500px;
-            margin-bottom: 40px;
+            font-size: 70px;
+            padding-bottom: 50px;
+            padding-top: 65px;
             color: $textoOscuro;
             font-family: 'Antonio', sans-serif;
+            /*underline*/
+            text-decoration-line: underline;
+            text-decoration-style: "solid";
+            text-decoration-color: $colorSecundario;
+            text-decoration-thickness: 9px;
         }
         .parrafo{
             color: $textoOscuro;
-            width: 600px;
-        }
-        .subtitulo{
-            color: $colorSecundario;
-            display: inline-block;
-            background-color: $colorTerciario;
-            border-radius: 30px;
-            padding:10px;
-            margin-bottom: 50px;
-        }
+            padding-right:390px;
+            padding-left:390px;
+            }
+            .subtitulo{
+                display: inline-block;
+                background-color: $colorTerciario;
+                border-radius: 30px;
+                padding:10px;
+                margin-bottom: 130px;
+                margin-top: 50px;
+                box-shadow: inset 0 0 0 0 $colorSecundario;
+                transition: ease-out 0.5s;
+                outline: none;
+                    &:hover{
+                        box-shadow: inset 800px 0 0 0 $colorSecundario;
+                        border-radius: 30px;
+                    }
+                a{
+                color: $colorPrincipal;
+                text-decoration: none;
+                font-size: 20px;
+                margin: 25px;
+                padding: 10px;
+                transition: ease-out 0.4s;
+                &:hover{
+                    color: $textoOscuro;
+                        }
+                }
+            }
+        }    
     }
-    .iconoBanner{
-        img{
-            height: 350px;
-            width: 350px;
-            margin-bottom: 80px;
-            
-        }
-}
-}
-
-/*Lista contenido*/
-.itemsFlex{
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.listaIndex{
-    display: flex;
-    flex-direction: column;
-    h4{
-    color: $textoOscuro;
-}
-.linksIndex{
-    a{
-    text-align: left;
-    text-decoration: none;
-    color: $textoOscuro;
-    &:hover{
-        color: $colorTerciario;
-    }
-}
-}
-}
-
-/*Footer*/

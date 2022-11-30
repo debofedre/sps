@@ -1,5 +1,79 @@
-.bodyTablas {
-  background-color: #1f1b1b; }
+/*Nav*/
+nav {
+  background-image: url("../multimedia/fondo.png");
+  display: flex;
+  justify-content: center;
+  background-color: #fbe8de; }
+  nav .subtitulo {
+    display: inline-block;
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #eb542a;
+    box-shadow: inset 0 0 0 0 #eb542a;
+    transition: ease-out 0.5s;
+    outline: none; }
+    nav .subtitulo:hover {
+      box-shadow: inset 900px 0 0 0 #eb542a;
+      border-radius: 30px; }
+    nav .subtitulo a {
+      color: #fbe8de;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 25px;
+      padding: 10px;
+      transition: ease-out 0.1s; }
+      nav .subtitulo a:hover {
+        color: #000000; }
+
+/*banner*/
+.bannerTablas {
+  background-image: url("../multimedia/fondo.png");
+  width: 100%;
+  height: 450px;
+  background-color: #fbe8de;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+  .bannerTablas .textoBannerTablas .titulo {
+    font-size: 70px;
+    margin-bottom: 50px;
+    color: #000000;
+    font-family: 'Antonio', sans-serif;
+    /*underline*/
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: #eb542a;
+    text-decoration-thickness: 9px; }
+
+/*Lista contenido*/
+.itemsFlex {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px; }
+
+.listaIndex {
+  display: flex;
+  flex-direction: column; }
+  .listaIndex h4 {
+    color: #000000; }
+  .listaIndex .linksIndex {
+    list-style-type: circle; }
+    .listaIndex .linksIndex a {
+      text-align: left;
+      text-decoration: none;
+      color: #000000;
+      transition: ease-out 0.1s; }
+      .listaIndex .linksIndex a:hover {
+        color: #eb542a; }
 
 /*Tabla*/
 .container {
@@ -12,14 +86,15 @@ table {
   width: 700px;
   border-collapse: collapse;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(138, 138, 138, 0.507);
-  border-radius: 10px; }
+  box-shadow: 0 0 20px #0000003f;
+  border-radius: 29px;
+  background: #ffffff; }
 
 th,
 td {
   padding: 20px;
-  background-color: #3635353b;
-  color: #ffffff; }
+  background-color: #ffffff38;
+  color: #000000; }
 
 th {
   text-align: left; }
@@ -28,17 +103,19 @@ thead th {
   background-color: #000000;
   text-align: center;
   color: #ffffff; }
-  thead th:hover {
-    color: #f19951; }
 
-tbody tr:hover {
-  background-color: #3635353b; }
+tbody tr {
+  box-shadow: inset 0 0 0 0 #eb542a;
+  transition: ease-out 0.5s;
+  outline: none; }
+  tbody tr:hover {
+    box-shadow: inset 900px 0 0 0 #eb542a36; }
 
 tbody td {
   position: relative;
   text-align: center; }
   tbody td:hover {
-    color: #f19951; }
+    color: #000000; }
     tbody td:hover:before {
       content: "";
       position: absolute;
@@ -46,7 +123,7 @@ tbody td {
       right: 0;
       top: -9999px;
       bottom: -9999px;
-      background-color: #3635353b;
+      background-color: #eb542a4b;
       z-index: -1; }
 
 /*Texto*/
@@ -58,11 +135,11 @@ tbody td {
   align-items: center;
   height: 200px; }
   .textoTablas h1 {
-    color: #ffffff;
+    color: #000000;
     font-family: 'Antonio', sans-serif; }
   .textoTablas p {
     margin-top: 0;
-    color: #ffffff; }
+    color: #000000; }
 
 /*Texto entre tablas MEDIA QUERISSSSS
 
@@ -105,22 +182,24 @@ tbody td {
     margin: 30px 20px;
     position: absolute;
     max-width: 250px;
-    background-color: #f19951;
+    color: #ffffff;
+    background-color: #eb542a;
     padding: 1.125em 1.5em;
     border-radius: 1rem;
-    box-shadow: 0 0.125rem 0.5rem rgba(255, 255, 255, 0.3), 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.2); }
+    /* looks
+        filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+    }*/ }
     .speechBubble .textoEntreTablas::before {
       content: '';
       position: absolute;
       width: 0;
       height: 0;
       border-left: 10px solid transparent;
-      border-right: 10px solid #f19951;
-      border-top: 10px solid #f19951;
+      border-right: 10px solid #eb542a;
+      border-top: 10px solid #eb542a;
       border-bottom: 10px solid transparent;
       left: -19px;
-      top: 10px;
-      filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1)); }
+      top: 10px; }
 
 /*
 .tabla{
@@ -145,115 +224,55 @@ tbody td {
 }*/
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #1f1b1b; }
+  background-color: #fbe8de;
+  background-image: url("../multimedia/fondo.png"); }
 
-.navbar {
-  background-color: #000000;
-  border-bottom: 1px solid #f19951; }
-  .navbar div a {
-    color: #ffffff; }
-    .navbar div a img {
-      width: 65px;
-      height: 65px; }
-    .navbar div a:hover {
-      color: #f19951;
-      background-color: #3635353b; }
-
-.dropdown-menu {
-  background-color: #1f1b1b; }
-
-/*Shape divider
-.custom-shape-divider-bottom-1666711326 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1666711326 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1666711326 .shape-fill {
-    fill: $colorPrincipal;
-}*/
-.custom-shape-divider-bottom-1666890719 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg); }
-
-.custom-shape-divider-bottom-1666890719 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 149px;
-  transform: rotateY(180deg); }
-
-.custom-shape-divider-bottom-1666890719 .shape-fill {
-  fill: #1f1b1b; }
+/*Scroll*/
+html {
+  scroll-behavior: smooth; }
 
 /*Banner*/
 .banner {
-  position: relative;
-  /*para el shapedivider*/
   width: 100%;
-  height: 550px;
-  background-color: #000000;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
+  align-content: center;
+  text-align: center; }
   .banner .textoBanner .titulo {
-    width: 500px;
-    margin-bottom: 40px;
-    color: #ffffff;
-    font-family: 'Antonio', sans-serif; }
-  .banner .textoBanner .parrafo {
-    color: #ffffff;
-    width: 600px; }
-  .banner .textoBanner .subtitulo {
+    font-size: 70px;
+    padding-bottom: 50px;
+    padding-top: 65px;
     color: #000000;
+    font-family: 'Antonio', sans-serif;
+    /*underline*/
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: #eb542a;
+    text-decoration-thickness: 9px; }
+  .banner .textoBanner .parrafo {
+    color: #000000;
+    padding-right: 390px;
+    padding-left: 390px; }
+  .banner .textoBanner .subtitulo {
     display: inline-block;
-    background-color: #f19951;
+    background-color: #000000;
     border-radius: 30px;
     padding: 10px;
-    margin-bottom: 50px; }
-  .banner .iconoBanner img {
-    height: 350px;
-    width: 350px;
-    margin-bottom: 80px; }
-
-/*Lista contenido*/
-.itemsFlex {
-  margin: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 50px; }
-
-.listaIndex {
-  display: flex;
-  flex-direction: column; }
-  .listaIndex h4 {
-    color: #ffffff; }
-  .listaIndex .linksIndex a {
-    text-align: left;
-    text-decoration: none;
-    color: #ffffff; }
-    .listaIndex .linksIndex a:hover {
-      color: #f19951; }
-
-/*Footer*/
+    margin-bottom: 130px;
+    margin-top: 50px;
+    box-shadow: inset 0 0 0 0 #eb542a;
+    transition: ease-out 0.5s;
+    outline: none; }
+    .banner .textoBanner .subtitulo:hover {
+      box-shadow: inset 800px 0 0 0 #eb542a;
+      border-radius: 30px; }
+    .banner .textoBanner .subtitulo a {
+      color: #fbe8de;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 25px;
+      padding: 10px;
+      transition: ease-out 0.4s; }
+      .banner .textoBanner .subtitulo a:hover {
+        color: #000000; }
