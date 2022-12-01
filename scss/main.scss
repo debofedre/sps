@@ -1,8 +1,13 @@
 @import "variables";
 @import "glosarios";
 
+@font-face {
+    font-family: "nova";
+    src: url("../fonts/Aesthet\ Nova\ Medium.ttf");
+}
+
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arvo', serif;
     background-color: $colorPrincipal;
     background-image: url("../multimedia/fondo.png");
 }
@@ -23,33 +28,34 @@ html{
     .textoBanner{
         .titulo{
             font-size: 70px;
-            padding-bottom: 50px;
-            padding-top: 75px;
+            padding-bottom: 20px;
+            padding-top: 100px;
             color: $textoOscuro;
-            font-family: 'Antonio', sans-serif;
-            /*underline*/
+            font-family: 'nova', sans-serif;
+            /*underline
             text-decoration-line: underline;
             text-decoration-style: "solid";
             text-decoration-color: $colorSecundario;
-            text-decoration-thickness: 9px;
+            text-decoration-thickness: 9px;*/
         }
         .parrafo{
             color: $textoOscuro;
-            padding-right:390px;
-            padding-left:390px;
+            padding-right:300px;
+            padding-left:300px;
+            font-size: 20px;
             }
             .subtitulo{
                 display: inline-block;
-                background-color: $colorTerciario;
+                background-color: $colorSecundario;
                 border-radius: 30px;
                 padding:10px;
-                margin-bottom: 115px;
-                margin-top: 50px;
-                box-shadow: inset 0 0 0 0 $colorSecundario;
+                margin-bottom: 100px;
+                margin-top: 30px;
+                box-shadow: inset 0 0 0 0 $colorTerciario;
                 transition: ease-out 0.5s;
                 outline: none;
                     &:hover{
-                        box-shadow: inset 800px 0 0 0 $colorSecundario;
+                        box-shadow: inset 800px 0 0 0 $colorTerciario;
                         border-radius: 30px;
                     }
                 a{
@@ -60,7 +66,7 @@ html{
                 padding: 10px;
                 transition: ease-out 0.4s;
                 &:hover{
-                    color: $textoOscuro;
+                    color: $colorSecundario;
                         }
                 }
             }

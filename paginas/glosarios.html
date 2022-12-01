@@ -24,6 +24,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+<!--font Lilita-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+   <!--font arvo-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 
     <!--Bootstrap icons-->
     <link
@@ -43,7 +51,7 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
 
-  <body>
+  <body class="fondoPaginas">
     <!--Nav-->
     <nav><p class="subtitulo"><a class="linksIndex" href="../index.html">Inicio</a> <a class="linksIndex" href="glosarios.html">Glosarios</a> <a class="linksIndex" href="consejos.html">Consejos</a> <a class="linksIndex" href="software.html">Software</a> <a class="linksIndex" href="recursos.html">Recursos Web</a> </p></nav>
     <!--Banner-->
@@ -55,8 +63,8 @@
         <ul class="linksIndex">
           <a href="#musica"><li>Música</li></a>
           <a href="#sonidos"><li>Sonidos de ambiente y de objetos</li></a>
-          <a href="#expresiones"><li>Expresiones</li></a>
-          <a href="#tonos"><li>Tonos</li></a>
+          <a href="#expresiones"><li>Expresiones y tonos</li></a>
+          <a href="#tonos"><li>Entonación</li></a>
           <a href="#idiomas"><li>Idiomas</li></a>
           <a href="#ids"><li>Ids</li></a>
           <a href="#onoma"><li>Onomatopeyas</li></a>
@@ -67,11 +75,21 @@
       </div>
       </div>
 
-    <main class="textoTablas">
-      <h1 id="musica">Música</h1>
+      <section class="franjaFlex">
+      <div class="franja">
+        <main class="textoTablas">
+          <h2 id="musica">Música</h2>
+          <p>Música diegética | Música extradiegética | Canciones</p>
+            <!--Tratamos textos audiovisuales que no solo contienen líneas de diálogo, sino también información paralingüística, música y efectos sonoros.We deal with audiovisual texts which contain not only dialogue lines but also paralinguistic information, music and sound effects.-->
+        </main>
+      </div>
+    </section>
+
+    <!--<main class="textoTablas">
+      <h2 id="musica">Música</h2>
       <p>Música diegética | Música extradiegética | Canciones</p>
-        <!--Tratamos textos audiovisuales que no solo contienen líneas de diálogo, sino también información paralingüística, música y efectos sonoros.We deal with audiovisual texts which contain not only dialogue lines but also paralinguistic information, music and sound effects.-->
-    </main>
+        Tratamos textos audiovisuales que no solo contienen líneas de diálogo, sino también información paralingüística, música y efectos sonoros.We deal with audiovisual texts which contain not only dialogue lines but also paralinguistic information, music and sound effects.
+    </main>-->
 
     <div class="container">
       <table>
@@ -81,7 +99,7 @@
         <tbody>
           <tr>
             <td>[suena múscia electrónica en altavoz]</td>
-            <td>[electronic music playing on speakers]]</td>
+            <td>[electronic music playing on speakers]</td>
           </tr>
           <tr>
             <td>[suena múscia electrónica a lo lejos]</td>
@@ -179,10 +197,14 @@
     </table>
   </div>
 
+  <section class="franjaFlex">
+<div class="franja">
   <main class="textoTablas">
-    <h1 id="sonidos">Sonidos de ambiente y de objetos</h1>
+    <h2 id="sonidos">Sonidos de ambiente y de objetos</h2>
     <p>Sonidos de ambiente | Teléfono | Vehículos | Objetos | Acciones</p>
 </main>
+</div>
+</section>
 
 <!--Speech bubble-->
 <section class="speechBubble">
@@ -235,7 +257,7 @@
         </tr>
         <tr>
           <td>[hablando indistintamente]</td>
-          <td>[speaking gibberish]/td>
+          <td>[speaking gibberish]</td>
         </tr>
     </tbody>
   </table>
@@ -464,10 +486,14 @@
   </table>
 </div>
 
-<main class="textoTablas">
-  <h1 id="expresiones">Expresiones</h1>
-<p>Expresiones | Tonos | Idiomas | Ids</p>
-</main>
+<section class="franjaFlex">
+<div class="franja">
+  <main class="textoTablas">
+    <h2 id="expresiones">Expresiones</h2>
+  <p>Expresiones de exclamación | Expresiones de risa | Expresiones de llanto</p>
+  </main>
+</div>
+</section>
 
 <div class="container">
 <table>
@@ -612,9 +638,13 @@
 </table>
 </div>
 
-<main class="textoTablas">
-  <h1 id="tonos">Tonos</h1>
-</main>
+<section class="franjaFlex">
+  <div class="franja">
+    <main class="textoTablas">
+      <h2 id="tonos">Entonación</h2>
+    </main>
+  </div>
+  </section>
 
 <div class="container">
 <table>
@@ -646,14 +676,18 @@
   </tbody>
 </table>
 </div>
+<section class="franjaFlex">
+<div class="franja">
+  <main class="textoTablas">
+    <h2 id="idiomas">Idiomas</h2>
+  </main>
+</div>
+</section>
 
-<main class="textoTablas">
-  <h1 id="idiomas">Idiomas</h1>
-</main>
 <div class="container">
 <table>
   <thead>
-    <th colspan="2"><strong>Idiomas</strong></th>
+    <th colspan="2"><strong>Idiomas extranjeros</strong></th>
   </thead>
   <tbody>
       <tr>
@@ -668,9 +702,14 @@
 </table>
 </div>
 
-<main class="textoTablas">
-  <h1 id="ids">Ids</h1>
-</main>
+<section class="franjaFlex">
+<div class="franja">
+  <main class="textoTablas">
+    <h2 id="ids">Ids</h2>
+  </main>
+</div>
+</section>
+
 <div class="container">
 <table>
   <thead>
@@ -780,15 +819,18 @@
 </table>
 </div>
 
-<main class="textoTablas">
-  <h1 id="onoma">Onomatopeyas</h1>
-  <p>Onomatopeyas aceptadas por la RAE</p>
-</main>
+<section class="franjaFlex">
+<div class="franja">
+  <main class="textoTablas">
+    <h2 id="onoma">Onomatopeyas e interjecciones</h2>
+  </main>
+</div>
+</section>
 
 <div class="container">
   <table>
     <thead>
-      <th colspan="3">Onomatopeyas</th>
+      <th colspan="3">Onomatopeyas aceptadas por la RAE</th>
     </thead>
     <tbody>
       <tr>
@@ -854,6 +896,18 @@
     </tbody>
   </table>
 </div>
+
+<!--Sticky btn-->
+<div class="stickyBtn">
+  <a
+    class="redes"
+    href="#"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+    </svg></a>
+</div>
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

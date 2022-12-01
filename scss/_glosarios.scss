@@ -1,3 +1,7 @@
+.fondoPaginas{
+    background-color: #dddddd;
+}
+
 /*Nav*/
 nav{
     background-image: url("../multimedia/fondo.png");
@@ -6,18 +10,17 @@ nav{
     background-color: $colorPrincipal;
     .subtitulo{
         display: inline-block;
-        background-color: $colorTerciario;
+        background-color: $colorSecundario;
         border-radius: 30px;
         padding:10px;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        margin-top: 40px;
         color: $colorSecundario;
         
-                box-shadow: inset 0 0 0 0 #eb542a;
+                box-shadow: inset 0 0 0 0 $colorTerciario;
                 transition: ease-out 0.5s;
                 outline: none;
             &:hover{
-                box-shadow: inset 900px 0 0 0 #eb542a;
+                box-shadow: inset 900px 0 0 0 $colorTerciario;
                 border-radius: 30px;
             }
         a{
@@ -28,7 +31,7 @@ nav{
         padding: 10px;
         transition: ease-out 0.1s;
         &:hover{
-            color: $textoOscuro;
+            color: $colorSecundario;
         }
         
         }
@@ -39,7 +42,8 @@ nav{
 .bannerTablas{
     background-image: url("../multimedia/fondo.png");
     width: 100%;
-    height: 450px;
+    height: 520px;
+    margin-bottom: 50px;
     background-color: $colorPrincipal;
     display: flex;
     flex-direction: row;
@@ -49,34 +53,30 @@ nav{
     .textoBannerTablas{
         .titulo{
             font-size: 70px;
-            margin-bottom: 50px;
             color: $textoOscuro;
-            font-family: 'Antonio', sans-serif;
-            /*underline*/
+            font-family: 'nova', sans-serif;
+            /*underline
             text-decoration-line: underline;
             text-decoration-style: "solid";
             text-decoration-color: $colorSecundario;
-            text-decoration-thickness: 9px;
+            text-decoration-thickness: 9px;*/
         }
     }
 }
 
 /*Lista contenido*/
 .itemsFlex{
-    margin: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .listaIndex{
     display: flex;
     flex-direction: column;
-    h4{
-    color: $textoOscuro;
 }
 .linksIndex{
     list-style-type: circle;
@@ -85,11 +85,44 @@ nav{
     text-decoration: none;
     color: $textoOscuro;
     transition: ease-out 0.1s;
+    font-size: 18px;
     &:hover{
         color: $colorSecundario;
+        }
     }
 }
+
+.franjaFlex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+.franja{
+    background-color: #dddddd;
+    background-image: url(../multimedia/fondo.png);
+    width: 700px;
+    height: 200px;
+    margin-bottom: 40px;
 }
+}
+
+/*Texto*/
+.textoTablas{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    h2{
+        color: $textoOscuro;
+        font-family: 'nova', sans-serif;
+        font-size: 40px;
+    }
+    p{
+        font-size: 17px;
+        margin-top: 0;
+        color: $textoOscuro;
+    }
 }
 
 /*Tabla*/
@@ -102,12 +135,13 @@ nav{
 
 table {
 	width: 700px;
-	border-collapse: collapse;
+    font-size: 20px;
+    border: 6px solid $colorPrincipal;
+    border-collapse: collapse;
 	overflow: hidden;
-	box-shadow: 0 0 20px #0000003f;
-    border-radius: 29px;
-    background: #ffffff;
-    
+    /*box-shadow: 0 0 20px #0000003f;*/
+    background: #f6f8ea;
+    background-image: url("../multimedia/fondo.png");
 }
 
 th,
@@ -123,9 +157,10 @@ th {
 
 thead {
 	th {
-		background-color: #000000;
+		border-bottom: 6px solid $colorPrincipal;
         text-align: center;
-        color: $textoClaro;
+        color: $textoOscuro;
+        font-size: 25px;
 	}
 }
 
@@ -133,7 +168,6 @@ tbody {
 	tr {
         box-shadow: inset 0 0 0 0 $colorSecundario;
         transition: ease-out 0.5s;
-        outline: none;
 		&:hover {
 			box-shadow: inset 900px 0 0 0 #eb542a36;
 		}
@@ -155,27 +189,6 @@ tbody {
 			}
 		}
 	}
-}
-
-
-/*Texto*/
-
-.textoTablas{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    h1{
-        color: $textoOscuro;
-        font-family: 'Antonio', sans-serif;
-        
-    }
-    p{
-        margin-top: 0;
-        color: $textoOscuro;
-    }
 }
 
 /*Texto entre tablas MEDIA QUERISSSSS
@@ -271,4 +284,21 @@ tbody {
 }*/
 
 
-
+/*Sticky Whatsaap*/
+.stickyBtn{
+    position: fixed;
+    bottom: 30px;
+    right:20px;
+    z-index: 1000;
+    a{
+    svg{
+        width:60px;
+        height: 60px;
+        color: $colorSecundario;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            transform: scale(0.8);
+            }
+        }
+    }
+}
