@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: "nova";
-    src: url("../fonts/Aesthet\ Nova\ Medium.ttf");
+    src: url("../fonts/grifterbold.otf");
 }
 
 body{
-    font-family: 'Arvo', serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: $colorPrincipal;
     background-image: url("../multimedia/fondo.png");
 }
@@ -27,46 +27,60 @@ html{
     text-align: center;
     .textoBanner{
         .titulo{
-            font-size: 70px;
+            font-size: 60px;
             padding-bottom: 20px;
             padding-top: 100px;
             color: $textoOscuro;
-            font-family: 'nova', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             /*underline
             text-decoration-line: underline;
             text-decoration-style: "solid";
             text-decoration-color: $colorSecundario;
             text-decoration-thickness: 9px;*/
+            .palabra{
+                color: #B7B6DBff;
+                font-weight: bolder;
+            
+            }
+            .palabra1{
+                color: #B7B6DBff;
+                font-weight: bolder;
+
+            }
         }
         .parrafo{
             color: $textoOscuro;
             padding-right:300px;
             padding-left:300px;
             font-size: 20px;
+            .palabra{
+                color: #B7B6DBff;
+                font-weight: bolder;
+            }
             }
             .subtitulo{
                 display: inline-block;
-                background-color: $colorSecundario;
+                background-color: #faf7ec;
                 border-radius: 30px;
                 padding:10px;
                 margin-bottom: 100px;
                 margin-top: 30px;
-                box-shadow: inset 0 0 0 0 $colorTerciario;
+                box-shadow: inset 0 0 0 0 #B7B6DBff;
                 transition: ease-out 0.5s;
                 outline: none;
                     &:hover{
-                        box-shadow: inset 800px 0 0 0 $colorTerciario;
+                        box-shadow: inset 800px 0 0 0 #B7B6DBff;
                         border-radius: 30px;
                     }
                 a{
-                color: $colorPrincipal;
+                color: #160c1e;
                 text-decoration: none;
                 font-size: 20px;
                 margin: 25px;
                 padding: 10px;
                 transition: ease-out 0.4s;
                 &:hover{
-                    color: $colorSecundario;
+                    color: #1f1f1f;
                         }
                 }
             }
