@@ -1,3 +1,4 @@
+/*#6649d1c2*/
 /*$colorPrincipal: #1f1f1f;
 $colorSecundario: #B7B6DBff;
 $colorTerciario: #B7B6DBff;
@@ -26,11 +27,11 @@ nav {
     padding: 10px;
     margin-top: 40px;
     color: #222222;
-    box-shadow: inset 0 0 0 0 #6a688d;
+    box-shadow: inset 0 0 0 0 #6a688dbb;
     transition: ease-out 0.5s;
     outline: none; }
     nav .subtitulo:hover {
-      box-shadow: inset 900px 0 0 0 #6a688d;
+      box-shadow: inset 900px 0 0 0 #6a688dbb;
       border-radius: 30px; }
     nav .subtitulo a {
       color: #ECECEC;
@@ -46,7 +47,7 @@ nav {
 .bannerTablas {
   background-image: url("../multimedia/fondo.png");
   width: 100%;
-  height: 620px;
+  height: 600px;
   margin-bottom: 50px;
   background-color: #ECECEC;
   display: flex;
@@ -87,7 +88,7 @@ nav {
     transition: ease-out 0.1s;
     font-size: 18px; }
     .linksIndex a:hover {
-      color: #6a688d; }
+      color: #6a688dbb; }
 
 .franjaFlex {
   display: flex;
@@ -127,7 +128,6 @@ nav {
 table {
   width: 700px;
   font-size: 20px;
-  border: 1px dotted #ECECEC;
   border-collapse: collapse;
   overflow: hidden;
   /*box-shadow: 0 0 20px #0000003f;*/
@@ -151,10 +151,10 @@ thead th {
 
 tbody tr {
   border-bottom: 1px dotted #222222;
-  box-shadow: inset 0 0 0 0 #b7b6db o;
+  box-shadow: inset 0 0 0 0 #6a688dbb;
   transition: ease-out 0.5s; }
   tbody tr:hover {
-    box-shadow: inset 900px 0 0 0 rgba(183, 182, 219, 0.521); }
+    box-shadow: inset 900px 0 0 0 #6a688dbb; }
 
 tbody td {
   position: relative;
@@ -183,7 +183,7 @@ tbody td {
 	    position: relative;
 	    max-width: 30em;
 	    // looks
-	    background-color: $colorTerciario;
+	    background-color: $colorSecundario;
 	    padding: 1.125em 1.5em;
 	    border-radius: 1rem;
         box-shadow:	0 0.125rem 0.5rem rgba(255, 255, 255, 0.3), 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.2);
@@ -199,7 +199,7 @@ tbody td {
         border-top: none;
     
         // looks
-        border-bottom-color: $colorTerciario;
+        border-bottom-color: $colorSecundario;
         filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
     }
 }
@@ -248,7 +248,7 @@ tbody td {
         th{
             color: $textoClaro;
             padding: 1em;
-            background-color: $colorTerciario;
+            background-color: $colorSecundario;
         }
     }
 }*/
@@ -261,7 +261,7 @@ tbody td {
   .stickyBtn a svg {
     width: 60px;
     height: 60px;
-    color: #6a688d;
+    color: #6a688dbb;
     transition: all 0.2s ease-in-out; }
     .stickyBtn a svg:hover {
       transform: scale(0.8); }
@@ -290,7 +290,7 @@ html {
   .banner .textoBanner .titulo {
     font-size: 60px;
     padding-bottom: 20px;
-    padding-top: 110px;
+    padding-top: 130px;
     color: #222222;
     font-family: 'Montserrat', sans-serif;
     /*underline
@@ -299,19 +299,16 @@ html {
             text-decoration-color: $colorSecundario;
             text-decoration-thickness: 9px;*/ }
     .banner .textoBanner .titulo .palabra {
-      color: #6a688d;
+      color: #6a688dbb;
       font-weight: bolder; }
     .banner .textoBanner .titulo .palabra1 {
-      color: #6a688d;
+      color: #6a688dbb;
       font-weight: bolder; }
   .banner .textoBanner .parrafo {
     color: #222222;
     padding-right: 300px;
     padding-left: 300px;
     font-size: 20px; }
-    .banner .textoBanner .parrafo .palabra {
-      color: #6a688d;
-      font-weight: bolder; }
   .banner .textoBanner .subtitulo {
     display: inline-block;
     background-color: #222222;
@@ -319,11 +316,11 @@ html {
     padding: 10px;
     margin-bottom: 100px;
     margin-top: 30px;
-    box-shadow: inset 0 0 0 0 #6a688d;
+    box-shadow: inset 0 0 0 0 #6a688dbb;
     transition: ease-out 0.5s;
     outline: none; }
     .banner .textoBanner .subtitulo:hover {
-      box-shadow: inset 800px 0 0 0 #6a688d;
+      box-shadow: inset 800px 0 0 0 #6a688dbb;
       border-radius: 30px; }
     .banner .textoBanner .subtitulo a {
       color: #ECECEC;
