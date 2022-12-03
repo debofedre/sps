@@ -29,7 +29,7 @@ html{
         .titulo{
             font-size: 60px;
             padding-bottom: 20px;
-            padding-top: 100px;
+            padding-top: 110px;
             color: $textoOscuro;
             font-family: 'Montserrat', sans-serif;
             /*underline
@@ -38,12 +38,12 @@ html{
             text-decoration-color: $colorSecundario;
             text-decoration-thickness: 9px;*/
             .palabra{
-                color: #B7B6DBff;
+                color: rgb(106, 104, 141);
                 font-weight: bolder;
             
             }
             .palabra1{
-                color: #B7B6DBff;
+                color: rgb(106, 104, 141);
                 font-weight: bolder;
 
             }
@@ -54,33 +54,33 @@ html{
             padding-left:300px;
             font-size: 20px;
             .palabra{
-                color: #B7B6DBff;
+                color: rgb(106, 104, 141);
                 font-weight: bolder;
             }
             }
             .subtitulo{
                 display: inline-block;
-                background-color: #faf7ec;
+                background-color: #222222;
                 border-radius: 30px;
                 padding:10px;
                 margin-bottom: 100px;
                 margin-top: 30px;
-                box-shadow: inset 0 0 0 0 #B7B6DBff;
+                box-shadow: inset 0 0 0 0 rgb(106, 104, 141);
                 transition: ease-out 0.5s;
                 outline: none;
                     &:hover{
-                        box-shadow: inset 800px 0 0 0 #B7B6DBff;
+                        box-shadow: inset 800px 0 0 0 rgb(106, 104, 141);
                         border-radius: 30px;
                     }
                 a{
-                color: #160c1e;
+                    color: #ECECEC;
                 text-decoration: none;
                 font-size: 20px;
                 margin: 25px;
                 padding: 10px;
                 transition: ease-out 0.4s;
                 &:hover{
-                    color: #1f1f1f;
+                    color: #222222;
                         }
                 }
             }

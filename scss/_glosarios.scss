@@ -1,5 +1,5 @@
 .fondoPaginas{
-    background-color: #faf7ec;
+    background-color: #F8F8F8;
 }
 
 /*Nav*/
@@ -10,17 +10,17 @@ nav{
     background-color: $colorPrincipal;
     .subtitulo{
         display: inline-block;
-        background-color: #faf7ec;
+        background-color: #222222;
         border-radius: 30px;
         padding:10px;
         margin-top: 40px;
         color: $colorSecundario;
         
-                box-shadow: inset 0 0 0 0 #B7B6DBff;
+                box-shadow: inset 0 0 0 0 rgb(106, 104, 141);
                 transition: ease-out 0.5s;
                 outline: none;
             &:hover{
-                box-shadow: inset 900px 0 0 0 #B7B6DBff;
+                box-shadow: inset 900px 0 0 0 rgb(106, 104, 141);
                 border-radius: 30px;
             }
         a{
@@ -42,7 +42,7 @@ nav{
 .bannerTablas{
     background-image: url("../multimedia/fondo.png");
     width: 100%;
-    height: 520px;
+    height: 620px;
     margin-bottom: 50px;
     background-color: $colorPrincipal;
     display: flex;
@@ -53,9 +53,8 @@ nav{
     .textoBannerTablas{
         .titulo{
             font-size: 70px;
-            color: $textoOscuro;
+            color: $colorSecundario;
             font-family: 'Montserrat', sans-serif;
-            color: #B7B6DBff;
             font-weight: bolder;
             /*underline
             text-decoration-line: underline;
@@ -89,7 +88,7 @@ nav{
     transition: ease-out 0.1s;
     font-size: 18px;
     &:hover{
-        color: $colorTerciario;
+        color: rgb(106, 104, 141);
         }
     }
 }
@@ -99,7 +98,7 @@ nav{
     justify-content: center;
     align-content: center;
 .franja{
-    background-color: #faf7ec;
+    background-color: #F8F8F8;
     background-image: url(../multimedia/fondo.png);
     width: 100%;
     height: 200px;
@@ -138,11 +137,11 @@ nav{
 table {
 	width: 700px;
     font-size: 20px;
-    border: 1px solid $colorPrincipal;
+    border: 1px dotted $colorPrincipal;
     border-collapse: collapse;
     overflow: hidden;
     /*box-shadow: 0 0 20px #0000003f;*/
-    background: #faf7ec;
+    background: #F8F8F8;
     background-image: url("../multimedia/fondo.png");
 }
 
@@ -159,7 +158,7 @@ th {
 
 thead {
 	th {
-		border-bottom: 1px solid $colorPrincipal;
+		border-bottom: 1px dotted $colorSecundario;
         text-align: center;
         color: $textoClaro;
         font-size: 25px;
@@ -168,6 +167,7 @@ thead {
 
 tbody {
 	tr {
+        border-bottom: 1px dotted $colorSecundario;
         box-shadow: inset 0 0 0 0 rgb(183, 182, 219)o;
         transition: ease-out 0.5s;
 		&:hover {
@@ -239,7 +239,7 @@ tbody {
 	    position: absolute;
 	    max-width: 250px;
 	    // looks
-        color: $textoClaro;
+        color: #ECECEC;
 	    background-color: $colorSecundario;
 	    padding: 1.125em 1.5em;
 	    border-radius: 1rem;
@@ -296,7 +296,7 @@ tbody {
     svg{
         width:60px;
         height: 60px;
-        color: $colorTerciario;
+        color: rgb(106, 104, 141);
         transition: all 0.2s ease-in-out;
         &:hover{
             transform: scale(0.8);
