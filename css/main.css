@@ -1,4 +1,3 @@
-/*#6649d1c2*/
 /*$colorPrincipal: #1f1f1f;
 $colorSecundario: #B7B6DBff;
 $colorTerciario: #B7B6DBff;
@@ -12,14 +11,14 @@ $colorPrincipalTrans: #eb542a4b;
 $textoClaro: #ffffff;
 $textoOscuro: #000000;*/
 .fondoPaginas {
-  background-color: #F8F8F8; }
+  background-color: #EDEDE0; }
 
 /*Nav*/
 nav {
   background-image: url("../multimedia/fondo.png");
   display: flex;
   justify-content: center;
-  background-color: #ECECEC; }
+  background-color: #F6F6EB; }
   nav .subtitulo {
     display: inline-block;
     background-color: #222222;
@@ -27,21 +26,21 @@ nav {
     padding: 10px;
     margin-top: 40px;
     color: #222222;
-    box-shadow: inset 0 0 0 0 #6a688dbb;
+    box-shadow: inset 0 0 0 0 #381fd1;
     transition: ease-out 0.5s;
     outline: none; }
     nav .subtitulo:hover {
-      box-shadow: inset 900px 0 0 0 #6a688dbb;
+      box-shadow: inset 900px 0 0 0 #381fd1;
       border-radius: 30px; }
     nav .subtitulo a {
-      color: #ECECEC;
+      color: #F6F6EB;
       text-decoration: none;
       font-size: 20px;
       margin: 25px;
       padding: 10px;
       transition: ease-out 0.1s; }
       nav .subtitulo a:hover {
-        color: #1f1f1f; }
+        color: #F6F6EB; }
 
 /*banner*/
 .bannerTablas {
@@ -49,7 +48,7 @@ nav {
   width: 100%;
   height: 600px;
   margin-bottom: 50px;
-  background-color: #ECECEC;
+  background-color: #F6F6EB;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -84,18 +83,18 @@ nav {
   .linksIndex a {
     text-align: left;
     text-decoration: none;
-    color: #222222;
+    color: #10284b;
     transition: ease-out 0.1s;
     font-size: 18px; }
     .linksIndex a:hover {
-      color: #6a688dbb; }
+      color: #381fd1; }
 
 .franjaFlex {
   display: flex;
   justify-content: center;
   align-content: center; }
   .franjaFlex .franja {
-    background-color: #F8F8F8;
+    background-color: #EDEDE0;
     background-image: url(../multimedia/fondo.png);
     width: 100%;
     height: 200px;
@@ -128,10 +127,12 @@ nav {
 table {
   width: 700px;
   font-size: 20px;
+  border-radius: 30px;
+  padding: 50px;
   border-collapse: collapse;
   overflow: hidden;
   /*box-shadow: 0 0 20px #0000003f;*/
-  background: #F8F8F8;
+  background: #F6F6EB;
   background-image: url("../multimedia/fondo.png"); }
 
 th,
@@ -144,17 +145,16 @@ th {
   text-align: left; }
 
 thead th {
-  border-bottom: 1px dotted #222222;
+  border-bottom: 3px solid #EDEDE0;
   text-align: center;
   color: #000000;
   font-size: 25px; }
 
 tbody tr {
-  border-bottom: 1px dotted #222222;
-  box-shadow: inset 0 0 0 0 #6a688dbb;
+  box-shadow: inset 0 0 0 0 #381fd1;
   transition: ease-out 0.5s; }
   tbody tr:hover {
-    box-shadow: inset 900px 0 0 0 #6a688dbb; }
+    box-shadow: inset 900px 0 0 0 #F6F6EB; }
 
 tbody td {
   position: relative;
@@ -212,7 +212,7 @@ tbody td {
     margin: 30px 20px;
     position: absolute;
     max-width: 250px;
-    color: #ECECEC;
+    color: #F6F6EB;
     background-color: #222222;
     padding: 1.125em 1.5em;
     border-radius: 1rem;
@@ -261,7 +261,7 @@ tbody td {
   .stickyBtn a svg {
     width: 60px;
     height: 60px;
-    color: #6a688dbb;
+    color: #381fd1;
     transition: all 0.2s ease-in-out; }
     .stickyBtn a svg:hover {
       transform: scale(0.8); }
@@ -272,7 +272,7 @@ tbody td {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ECECEC;
+  background-color: #F6F6EB;
   background-image: url("../multimedia/fondo.png"); }
 
 /*Scroll*/
@@ -285,13 +285,11 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-content: center;
-  text-align: center; }
+  text-align: left; }
   .banner .textoBanner .titulo {
-    font-size: 60px;
+    font-size: 70px;
     padding-bottom: 20px;
-    padding-top: 130px;
-    color: #222222;
+    color: #10284b;
     font-family: 'Montserrat', sans-serif;
     /*underline
             text-decoration-line: underline;
@@ -299,15 +297,19 @@ html {
             text-decoration-color: $colorSecundario;
             text-decoration-thickness: 9px;*/ }
     .banner .textoBanner .titulo .palabra {
-      color: #6a688dbb;
+      color: #381fd1;
       font-weight: bolder; }
     .banner .textoBanner .titulo .palabra1 {
-      color: #6a688dbb;
-      font-weight: bolder; }
+      font-weight: bolder;
+      color: #381fd1; }
+  .banner .textoBanner .parrafo1 {
+    padding-top: 130px;
+    color: #381fd1;
+    padding-right: 500px;
+    font-size: 20px; }
   .banner .textoBanner .parrafo {
-    color: #222222;
-    padding-right: 300px;
-    padding-left: 300px;
+    color: #10284b;
+    padding-right: 500px;
     font-size: 20px; }
   .banner .textoBanner .subtitulo {
     display: inline-block;
@@ -316,18 +318,19 @@ html {
     padding: 10px;
     margin-bottom: 100px;
     margin-top: 30px;
-    box-shadow: inset 0 0 0 0 #6a688dbb;
+    box-shadow: 0 0 20px #0000003f;
+    box-shadow: inset 0 0 0 0 #381fd1;
     transition: ease-out 0.5s;
     outline: none; }
     .banner .textoBanner .subtitulo:hover {
-      box-shadow: inset 800px 0 0 0 #6a688dbb;
+      box-shadow: inset 800px 0 0 0 #381fd1;
       border-radius: 30px; }
     .banner .textoBanner .subtitulo a {
-      color: #ECECEC;
+      color: #F6F6EB;
       text-decoration: none;
       font-size: 20px;
       margin: 25px;
       padding: 10px;
       transition: ease-out 0.4s; }
       .banner .textoBanner .subtitulo a:hover {
-        color: #222222; }
+        color: #ECECEC; }

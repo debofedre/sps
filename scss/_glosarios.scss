@@ -1,5 +1,5 @@
 .fondoPaginas{
-    background-color: #F8F8F8;
+    background-color: #EDEDE0;
 }
 
 /*Nav*/
@@ -10,15 +10,14 @@ nav{
     background-color: $colorPrincipal;
     .subtitulo{
         display: inline-block;
-        background-color: #222222;
+        background-color: $colorSecundario;
         border-radius: 30px;
         padding:10px;
         margin-top: 40px;
         color: $colorSecundario;
-        
-                box-shadow: inset 0 0 0 0 $colorTerciario;
-                transition: ease-out 0.5s;
-                outline: none;
+        box-shadow: inset 0 0 0 0 $colorTerciario;
+        transition: ease-out 0.5s;
+        outline: none;
             &:hover{
                 box-shadow: inset 900px 0 0 0 $colorTerciario;
                 border-radius: 30px;
@@ -31,7 +30,7 @@ nav{
         padding: 10px;
         transition: ease-out 0.1s;
         &:hover{
-            color: #1f1f1f;
+            color: $colorPrincipal;
         }
         
         }
@@ -98,7 +97,7 @@ nav{
     justify-content: center;
     align-content: center;
 .franja{
-    background-color: #F8F8F8;
+    background-color: #EDEDE0;
     background-image: url(../multimedia/fondo.png);
     width: 100%;
     height: 200px;
@@ -137,10 +136,12 @@ nav{
 table {
 	width: 700px;
     font-size: 20px;
+    border-radius: 30px;
+    padding: 50px;
     border-collapse: collapse;
     overflow: hidden;
     /*box-shadow: 0 0 20px #0000003f;*/
-    background: #F8F8F8;
+    background: #F6F6EB;
     background-image: url("../multimedia/fondo.png");
 }
 
@@ -157,7 +158,7 @@ th {
 
 thead {
 	th {
-		border-bottom: 1px dotted $colorSecundario;
+		border-bottom: 3px solid #EDEDE0;
         text-align: center;
         color: $textoClaro;
         font-size: 25px;
@@ -166,11 +167,10 @@ thead {
 
 tbody {
 	tr {
-        border-bottom: 1px dotted $colorSecundario;
         box-shadow: inset 0 0 0 0 $colorTerciario;
         transition: ease-out 0.5s;
 		&:hover {
-			box-shadow: inset 900px 0 0 0 $colorTerciario;
+			box-shadow: inset 900px 0 0 0 $colorPrincipal;
 		}
 	}
 	td {
@@ -238,7 +238,7 @@ tbody {
 	    position: absolute;
 	    max-width: 250px;
 	    // looks
-        color: #ECECEC;
+        color: #F6F6EB;
 	    background-color: $colorSecundario;
 	    padding: 1.125em 1.5em;
 	    border-radius: 1rem;
