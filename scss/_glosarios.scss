@@ -1,5 +1,5 @@
 .fondoPaginas{
-    background-color: #EDEDE0;
+    background-color: $colorPrincipal;
 }
 
 /*Nav*/
@@ -11,7 +11,7 @@ nav{
     .subtitulo{
         display: inline-block;
         background-color: $colorSecundario;
-        border-radius: 30px;
+        // border-radius: 30px;
         padding:10px;
         margin-top: 40px;
         color: $colorSecundario;
@@ -20,7 +20,7 @@ nav{
         outline: none;
             &:hover{
                 box-shadow: inset 900px 0 0 0 $colorTerciario;
-                border-radius: 30px;
+                // border-radius: 30px;
             }
         a{
         color: $colorPrincipal;
@@ -41,16 +41,18 @@ nav{
 .bannerTablas{
     background-image: url("../multimedia/fondo.png");
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin-bottom: 50px;
     background-color: $colorPrincipal;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
+    text-align: left;
     .textoBannerTablas{
         .titulo{
+            padding-left: 300px;
+            padding-right: 300px;
             font-size: 70px;
             color: $colorSecundario;
             font-family: 'Montserrat', sans-serif;
@@ -61,44 +63,64 @@ nav{
             text-decoration-color: $colorSecundario;
             text-decoration-thickness: 9px;*/
         }
+        .flecha{
+            position: absolute;
+            font-size: 1px;
+        }
     }
 }
-
 /*Lista contenido*/
 .itemsFlex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
     margin-top: 20px;
 }
 
 .listaIndex{
     display: flex;
-    flex-direction: column;
-}
-.linksIndex{
-    list-style-type: circle;
-    a{
-    text-align: left;
-    text-decoration: none;
-    color: $textoOscuro;
-    transition: ease-out 0.1s;
-    font-size: 18px;
-    &:hover{
-        color: $colorTerciario;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+        padding-left: 300px;
+        padding-right: 170px;
+        a{
+        margin-right: 70px;
+        text-align: left;
+        text-decoration: none;
+        color: $textoOscuro;
+        transition: ease-out 0.1s;
+        font-size: 18px;
+        margin-bottom: 30px;
+        &:hover{
+            background-color: $colorTerciario;
+            color: $colorPrincipal
+            }
         }
     }
-}
+// .linksIndex{
+//     list-style-type: circle;
+//     a{
+//     text-align: left;
+//     text-decoration: none;
+//     color: $textoOscuro;
+//     transition: ease-out 0.1s;
+//     font-size: 18px;
+//     &:hover{
+//         color: $colorTerciario;
+//         }
+//     }
+// }
+
 
 .franjaFlex{
     display: flex;
     justify-content: center;
     align-content: center;
 .franja{
-    background-color: #EDEDE0;
-    background-image: url(../multimedia/fondo.png);
+    background-color: $colorPrincipal;
     width: 100%;
     height: 200px;
     margin-bottom: 40px;
@@ -114,14 +136,14 @@ nav{
     align-items: center;
     height: 200px;
     h2{
-        color: $textoClaro;
+        color: $colorSecundario;
         font-family: 'Montserrat', sans-serif;
         font-size: 60px;
     }
     p{
         font-size: 17px;
         margin-top: 0;
-        color: $textoClaro;
+        color: $colorSecundario;
     }
 }
 
@@ -136,13 +158,12 @@ nav{
 table {
 	width: 700px;
     font-size: 20px;
-    border-radius: 30px;
+    // border-radius: 30px;
     padding: 50px;
     border-collapse: collapse;
     overflow: hidden;
     /*box-shadow: 0 0 20px #0000003f;*/
-    background: #F6F6EB;
-    background-image: url("../multimedia/fondo.png");
+    background: $colorPrincipal;
 }
 
 th,
@@ -158,7 +179,7 @@ th {
 
 thead {
 	th {
-		border-bottom: 3px solid #EDEDE0;
+		border-bottom: 1px solid $colorSecundario;
         text-align: center;
         color: $textoClaro;
         font-size: 25px;
@@ -167,10 +188,11 @@ thead {
 
 tbody {
 	tr {
+        border-bottom: 1px dotted $colorSecundario;
         box-shadow: inset 0 0 0 0 $colorTerciario;
         transition: ease-out 0.5s;
 		&:hover {
-			box-shadow: inset 900px 0 0 0 $colorPrincipal;
+			box-shadow: inset 900px 0 0 0 $colorPrincipalTrans;
 		}
 	}
 	td {
@@ -238,8 +260,8 @@ tbody {
 	    position: absolute;
 	    max-width: 250px;
 	    // looks
-        color: #F6F6EB;
-	    background-color: $colorSecundario;
+        color: $colorPrincipal;
+	    background-color: $colorTerciario;
 	    padding: 1.125em 1.5em;
 	    border-radius: 1rem;
         &::before {
@@ -249,8 +271,8 @@ tbody {
         width: 0;
         height: 0;
         border-left: 10px solid transparent;
-        border-right: 10px solid $colorSecundario;
-        border-top: 10px solid $colorSecundario;
+        border-right: 10px solid $colorTerciario;
+        border-top: 10px solid $colorTerciario;
         border-bottom: 10px solid transparent;
         left: -19px;
         top: 10px;

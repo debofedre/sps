@@ -9,7 +9,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: $colorPrincipal;
-    background-image: url("../multimedia/fondo.png");
 }
 
 /*Scroll*/
@@ -24,8 +23,10 @@ html{
     flex-direction: row;
     justify-content: space-evenly;
     text-align: left;
+    background-image: url("../multimedia/fondo.png");
     .textoBanner{
         .titulo{
+            font-weight: bolder;
             font-size: 70px;
             padding-bottom: 20px;
             color: $textoOscuro;
@@ -37,17 +38,22 @@ html{
             text-decoration-thickness: 9px;*/
             .palabra{
                 color: $colorTerciario;
-                font-weight: bolder;
+                
             
             }
             .palabra1{
-                font-weight: bolder;
-                color: $colorTerciario;
+                
+                background-color: $colorTerciario;
+                color:#fafafa;
+            }
+            .espacio{
+                color: $colorTerciario
             }
         }
         .parrafo1{
             padding-top: 130px;
-            color: $colorTerciario;
+            margin-bottom: 40px;
+            color: $colorSecundario;
             padding-right:500px;
             font-size: 20px;
         }
@@ -59,7 +65,7 @@ html{
             .subtitulo{
                 display: inline-block;
                 background-color: $colorSecundario;
-                border-radius: 30px;
+                // border-radius: 30px;
                 padding:10px;
                 margin-bottom: 100px;
                 margin-top: 30px;
@@ -70,7 +76,7 @@ html{
                 
                     &:hover{
                         box-shadow: inset 800px 0 0 0 $colorTerciario;
-                        border-radius: 30px;
+                        // border-radius: 30px;
                     }
                 a{
                 color: $colorPrincipal;
@@ -85,4 +91,16 @@ html{
                 }
             }
         }    
+    }
+
+    // .linea{
+    //     position: absolute;
+    //     top: 165px; left: 60px;
+    //     z-index:-1;
+    // }
+
+    .underline{
+        position: absolute;
+        top: 355px; left: 220px;
+        z-index:-1;
     }
