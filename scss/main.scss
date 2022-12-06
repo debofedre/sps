@@ -25,6 +25,8 @@ html{
     text-align: left;
     background-image: url("../multimedia/fondo.png");
     .textoBanner{
+        
+
         .titulo{
             font-weight: bolder;
             font-size: 70px;
@@ -41,21 +43,31 @@ html{
                 
             
             }
+
             .palabra1{
-                
-                background-color: $colorTerciario;
-                color:#fafafa;
+                // background-color: $colorTerciario;
+                // color:$colorPrincipal;
+        background-image: linear-gradient(120deg, $colorTerciario, $colorTerciario 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.3em;
+        background-position: 0 80%;
+        transition: background-size 0.25s ease-in;
+
+      &:hover {
+        background-size: 100% 88% !important;
+      }
+    
             }
             .espacio{
                 color: $colorTerciario
             }
         }
         .parrafo1{
-            padding-top: 130px;
-            margin-bottom: 40px;
+            padding-top: 100px;
+            margin-bottom: 20px;
             color: $colorSecundario;
             padding-right:500px;
-            font-size: 20px;
+            font-size: 17px;
         }
         .parrafo{
             color: $textoOscuro;
