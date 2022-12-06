@@ -84,13 +84,13 @@ nav{
     flex-direction:row;
     flex-wrap: wrap;
     padding-top: 30px;
-        padding-left: 300px;
-        padding-right: 170px;
+    padding-left: 300px;
+    padding-right: 170px;
         a{
         margin-right: 70px;
         text-align: left;
         text-decoration: none;
-        color: $textoOscuro;
+        color: $colorSecundario;
         transition: ease-out 0.1s;
         font-size: 18px;
         margin-bottom: 30px;
@@ -105,7 +105,7 @@ nav{
 //     a{
 //     text-align: left;
 //     text-decoration: none;
-//     color: $textoOscuro;
+//     color: $colorSecundario;
 //     transition: ease-out 0.1s;
 //     font-size: 18px;
 //     &:hover{
@@ -179,7 +179,7 @@ th,
 td {
 	padding: 20px;
 	/*background-color:#ffffff38;*/
-	color: $textoClaro;
+	color: $colorSecundario;
 }
 
 th {
@@ -190,7 +190,7 @@ thead {
 	th {
 		border-bottom: 1px solid $colorSecundario;
         text-align: center;
-        color: $textoClaro;
+        color: $colorSecundario;
         font-size: 25px;
 	}
 }
@@ -303,12 +303,12 @@ tbody {
     table{
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.37);
         width: 50%;
-        color: $textoClaro;
+        color: $colorSecundario;
         border: $colorPrincipal;
         background-color: $colorSecundario;
         margin: 20px;
         th{
-            color: $textoClaro;
+            color: $colorSecundario;
             padding: 1em;
             background-color: $colorSecundario;
         }
